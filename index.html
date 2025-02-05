@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogoLogica.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <title>Jogo de Lógica</title>
+</head>
+<body>
+    <!-- Botão para redirecionar -->
+    <button id="redirecionar" onclick="window.location.href='https://jorgejmarttins.github.io/jogos-dos-bixos/'">
+        Voltar para o launcher
+    </button>
+
+    <div id="container">
+        
+        <div id="problemasMatematicos">
+            <!-- A equação será exibida aqui -->
+        </div>
+
+        <div id="funcoes">
+            <div class="quadro">
+                <h4>Quadro de erros</h4>
+                <table>
+                    <tr>
+                        <td><img src="img/errado.png" alt="Erro"></td>
+                        <td><input type="number" id="qtdErro" class="qtds" disabled></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="botoes">
+                <button class="botao" id="verificar">
+                    Verificar
+                    <span class="material-symbols-outlined">check</span>
+                </button>
+                <button class="botao" id="recomecar">
+                    Recomeçar
+                    <span class="material-symbols-outlined">restart_alt</span>
+                </button>
+            </div>
+
+            <div class="quadro">
+                <h4>Quadro de acertos</h4>
+                <table>
+                    <tr>
+                        <td><img src="img/certo.png" alt="Certo"></td>
+                        <td><input type="number" id="qtdAcerto" class="qtds" disabled></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="jogo.js"></script>
+    
+</body>
+
+</html>
